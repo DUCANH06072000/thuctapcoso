@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+       <ViewFlipper
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:id="@+id/quangcao"
+           >
+           <ImageView
+               android:background="@drawable/vien"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/img"
+               />
+           <ImageView
+               android:background="@drawable/vien"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/img_1"
+               />
+           <ImageView
+               android:background="@drawable/vien"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/img_2"
+               />
+
+           <ImageView
+               android:background="@drawable/vien"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/img_3" />
+       </ViewFlipper>
+
+    </RelativeLayout>
+
+</LinearLayout>
