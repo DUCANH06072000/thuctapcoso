@@ -8,9 +8,6 @@
     tools:context=".view.MainActivity"
     android:background="@drawable/vien"
     >
-
-
-
     <ImageView
 
         android:layout_width="368dp"
@@ -19,49 +16,60 @@
         android:layout_marginTop="80dp"
         android:src="@drawable/imager_3_184860_700" />
 
-    <EditText
-
-        android:layout_marginLeft="50dp"
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="290dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:id="@+id/tk"
-        android:hint="USER NAME"
-        android:textStyle="normal"
-        android:textColor="@color/black"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        />
+        android:background="@drawable/vien2"
+        >
 
-    <EditText
+        <EditText
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tk"
+            android:hint="USER NAME"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            />
 
-        android:layout_marginLeft="50dp"
-        android:id="@+id/mk"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:textStyle="normal"
-        android:hint="PASSWORD"
-        android:inputType="textPassword"
-        android:textColor="@color/black"
-        />
+        <EditText
 
-    <Button
-        android:id="@+id/dangnhap"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="#986640"
-        android:shadowRadius="26"
-        android:text="Đăng nhập" />
+            android:layout_marginLeft="50dp"
+            android:id="@+id/mk"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textStyle="normal"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            />
 
-    <Button
-        android:layout_marginTop="5dp"
-        android:id="@+id/dangki"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#986640"
-        android:text="Đăng kí"
-        android:layout_gravity="center"
-        />
+        <Button
+            android:id="@+id/dangnhap"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="#986640"
+            android:shadowRadius="26"
+            android:text="Đăng nhập" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/dangki"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#986640"
+            android:text="Đăng kí"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
     <TextView
 
         android:layout_gravity="center"

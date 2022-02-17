@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
     >
-   <fragment
-       android:name="com.example.myapplication.Fragment.quangcaofrag"
-       android:id="@+id/fragmentquangcao"
-       android:layout_marginLeft="2dp"
-       android:layout_width="390dp"
-       android:layout_height="wrap_content"/>
-
-   <fragment
-       android:name="com.example.myapplication.Fragment.tintucfrag"
+   <LinearLayout
+       android:id="@+id/light"
        android:layout_width="match_parent"
-       android:id="@+id/fragmenttintuc"
-       android:layout_height="wrap_content"/>
-</LinearLayout>
+       android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+      <fragment
+          android:name="com.example.myapplication.Fragment.quangcaofrag"
+          android:id="@+id/fragmentquangcao"
+          android:layout_marginLeft="2dp"
+          android:layout_width="390dp"
+          android:layout_height="wrap_content"/>
+
+      <fragment
+          android:name="com.example.myapplication.Fragment.tintucfrag"
+          android:layout_width="match_parent"
+          android:id="@+id/fragmenttintuc"
+          android:layout_height="wrap_content"/>
+
+      <fragment
+          android:id="@+id/lvsanpham"
+          android:name="com.example.myapplication.Fragment.sanphamfrag"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          />
+
+   </LinearLayout>
+
+</ScrollView>

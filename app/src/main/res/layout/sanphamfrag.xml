@@ -9,16 +9,13 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="20dp"
-        android:text="Khuyến Mãi"
+        android:text="Sản phẩm"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/tintuc"
+        android:id="@+id/lvsanpham"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
-
-
 </LinearLayout>

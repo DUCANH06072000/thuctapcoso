@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vientoolbar"
+    android:orientation="vertical"
+    tools:context=".view.datban"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarGiohang"
+        app:title="Thực đơn"
+        app:titleTextColor="@color/black"
+        android:background="#f9ba48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/textban"
+                android:textSize="30dp"
+                android:text="Danh sách đang trống"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ListView
+                android:id="@+id/lvban"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btndatban"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:backgroundTint="#986640"
+        android:text="Đặt bàn"
+        android:textColor="@color/white"
+        android:textSize="20dp"></Button>
+
+
+</LinearLayout>

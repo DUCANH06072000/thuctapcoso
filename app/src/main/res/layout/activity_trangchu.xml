@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     tools:context=".view.trangchu">
 
     <LinearLayout
@@ -16,7 +15,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/vientoolbar"
-
             >
             <ImageView
                 android:layout_width="60dp"
@@ -42,9 +40,14 @@
         android:orientation="horizontal"
         />
     <com.google.android.material.tabs.TabLayout
-        android:background="@drawable/vientoolbar"
+        android:background="@drawable/vien"
         android:id="@+id/tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabIndicatorColor="#a845de"/>
+    <TextView
+        android:id="@+id/tenkhach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 </LinearLayout>

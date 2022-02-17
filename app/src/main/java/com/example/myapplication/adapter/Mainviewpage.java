@@ -8,8 +8,6 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import com.example.myapplication.Fragment.giohangfrag;
 import com.example.myapplication.Fragment.homeflag;
 
-import java.util.ArrayList;
-
 public class Mainviewpage extends FragmentStateAdapter {
 
 
@@ -27,7 +25,6 @@ public class Mainviewpage extends FragmentStateAdapter {
                 return new giohangfrag();
             default:
                 return  new homeflag();
-
 
         }
     }

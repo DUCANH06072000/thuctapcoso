@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.dangky"
+    android:background="@drawable/vien">
+
+    <ImageView
+
+        android:layout_width="368dp"
+        android:layout_height="283dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/imager_3_184860_700"
+        />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="340dp"
+        android:layout_gravity="center"
+        android:background="@drawable/vien2"
+        android:orientation="vertical"
+
+        >
+
+        <EditText
+            android:id="@+id/txttenkhach"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:hint="Họ và tên" />
+
+        <EditText
+            android:id="@+id/txtusername"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="Username"
+            android:shadowRadius="70" />
+
+        <EditText
+            android:id="@+id/txtpass"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="Paswword"
+            android:inputType="textPassword"
+
+            />
+
+        <EditText
+            android:id="@+id/txtsdt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="Số điện thoại"
+            android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/txtdiachi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="Địa chỉ"
+            android:minHeight="48dp" />
+
+
+        <Button
+            android:id="@+id/Dangky"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#986640"
+            android:shadowRadius="80"
+            android:text="Đăng ký" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
