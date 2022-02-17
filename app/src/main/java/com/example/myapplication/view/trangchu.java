@@ -1,6 +1,8 @@
 package com.example.myapplication.view;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -49,6 +51,13 @@ public class trangchu extends AppCompatActivity {
         }).attach();
        dulieu = new ArrayList<>();
 
+       binding.map.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               startActivity(new Intent(trangchu.this,dinhvi.class));
+           }
+       });
+
 
 
     }
@@ -57,7 +66,7 @@ public class trangchu extends AppCompatActivity {
         Khachhang khachhang = (Khachhang)getIntent().getSerializableExtra("thongtin");
         tenkhach = khachhang.getTenkhach();
         Diachi = khachhang.getDiaChi();
-        binding.tenkhach.setText(tenkhach);
+
 
     }
 

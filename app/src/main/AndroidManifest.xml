@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication"
-    tools:ignore="CoarseFineLocation" >
+    tools:ignore="CoarseFineLocation">
 
     <uses-permission
         android:name="android.permission.ACCESS_FINE_LOCATION"
@@ -15,7 +15,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication" >
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".view.dinhvi"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+
         <activity
             android:name=".view.dangky"
             android:exported="false" />
@@ -30,7 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".view.MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
